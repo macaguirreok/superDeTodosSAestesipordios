@@ -18,6 +18,7 @@ public static TreeSet<Producto> listaProductos= new TreeSet<>();
      */
     public Menu() {
         initComponents();
+        cargarProductos();
     }
 
     /**
@@ -132,4 +133,14 @@ public static TreeSet<Producto> listaProductos= new TreeSet<>();
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem5;
     // End of variables declaration//GEN-END:variables
+
+private void cargarProductos(){
+        listaProductos.add(new Producto(10, "Azucar x 1kg", 180, 75, Categoria.COMESTIBLES));
+        listaProductos.add(new Producto(12, "Yerba Mate", 850, 10, Categoria.COMESTIBLES));
+        listaProductos.add(new Producto(5, "Aceite de Girasol", 250, 5, Categoria.COMESTIBLES));
+        listaProductos.add(new Producto(1, "Detergente 300ml", 180, 30, Categoria.LIMPIEZA));
+        listaProductos.add(new Producto(100, "Head & Shoulders", 300, 22, Categoria.PERFUMERIA));
+    }
 }
+
+
